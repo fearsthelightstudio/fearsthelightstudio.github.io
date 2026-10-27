@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fears The Light</title>
+<meta name="description" content="Fears The Light — small games that are a little scary. Privacy policies, terms of use and contact.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c0d12'/%3E%3Cpath d='M16 5c3 4.5 6 7.6 6 12a6 6 0 0 1-12 0c0-3 1.6-5.2 3.4-7 .3 2.2 1.3 3.5 2.6 4.1C15.4 11 15.2 8 16 5z' fill='%23f2b544'/%3E%3C/svg%3E">
+<style>
+:root{color-scheme:dark;--bg:#0b0c10;--panel:#14161d;--line:#262a35;--text:#ece6d6;--muted:#9a9384;--glow:#f2b544;--glow2:#ff7a3d}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text)}
+body{font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","PingFang SC","Microsoft YaHei",sans-serif;min-height:100vh;
+  background:radial-gradient(60rem 28rem at 50% -6rem,rgba(242,181,68,.16),rgba(255,122,61,.05) 45%,transparent 70%),var(--bg)}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+nav{display:flex;justify-content:flex-end;gap:6px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:.82rem;font-weight:600;padding:3px 9px;border-radius:999px;border:1px solid transparent}
+nav a:hover{color:var(--text)} nav a.on{color:var(--bg);background:var(--glow)}
+header{text-align:center;padding:44px 0 34px}
+.mark{width:58px;height:58px;filter:drop-shadow(0 0 18px rgba(242,181,68,.55))}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:.32em;text-transform:uppercase;font-size:clamp(1.55rem,6vw,2.5rem);margin:14px 0 6px;padding-left:.32em}
+.tag{color:var(--muted);margin:0}
+h2{font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:28px 0 12px}
+.game{display:flex;gap:18px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+.game img{width:88px;height:88px;border-radius:20px;flex:none;box-shadow:0 6px 24px rgba(0,0,0,.5)}
+.game h3{margin:0 0 4px;font-size:1.25rem}
+.game p{margin:0 0 10px;color:#cfc8b8}
+.soon{display:inline-block;font-size:.76rem;color:var(--glow);border:1px solid rgba(242,181,68,.4);border-radius:999px;padding:1px 9px;margin-bottom:10px}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.links a{color:var(--text);text-decoration:none;font-weight:600;font-size:.9rem;padding:7px 13px;border-radius:10px;border:1px solid var(--line);background:#1b1e27}
+.links a:hover,.links a:focus-visible{border-color:var(--glow);outline:none}
+.contact p{margin:0 0 4px;color:#cfc8b8}
+.contact a{color:var(--glow);font-weight:600;word-break:break-all}
+footer{margin-top:44px;color:var(--muted);font-size:.82rem;text-align:center}
+@media (max-width:480px){.game{flex-direction:column}.game img{width:72px;height:72px;border-radius:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Language"><a href="?lang=en" data-l="en">EN</a><a href="?lang=pt" data-l="pt">PT</a><a href="?lang=es" data-l="es">ES</a><a href="?lang=fr" data-l="fr">FR</a><a href="?lang=zh" data-l="zh">中文</a></nav>
+<header>
+<svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="f" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff7a3d"/><stop offset="1" stop-color="#ffd27a"/></linearGradient></defs>
+<path d="M32 6c6 9 12 15.4 12 24.5a12 12 0 0 1-24 0c0-6.2 3.2-10.6 6.8-14.2.6 4.4 2.6 7 5.2 8.2C30.8 18.6 30.4 12.4 32 6z" fill="url(#f)"/>
+<rect x="24" y="44" width="16" height="14" rx="3" fill="#ece6d6"/><rect x="31" y="40" width="2" height="5" fill="#3a3326"/></svg>
+<h1>Fears The Light</h1>
+<p class="tag" data-i="tag">Small games that are a little scary.</p>
+</header>
+<main>
+<h2 data-i="games">Games</h2>
+<!-- To add another game: copy this <article>, change the texts, the icon and the folder (e.g. /missil/privacy.html). -->
+<article class="game">
+<img src="notit/icon.png" alt="NOT IT! icon" width="88" height="88">
+<div>
+<h3>NOT IT!</h3>
+<p data-i="desc">Hide from kids who never stop playing. Survive 5 nights and escape the school!</p>
+<span class="soon" data-i="soon">Coming soon to Google Play</span>
+<div class="links"><a href="notit/privacy.html" data-i="privacy" data-q>Privacy Policy</a><a href="notit/terms.html" data-i="terms" data-q>Terms of Use</a></div>
+</div>
+</article>
+<section class="contact">
+<h2 data-i="contact">Contact</h2>
+<p data-i="contactTxt">Questions, bugs or privacy requests — write to us:</p>
+<a href="mailto:fearsthelightstudio@gmail.com">fearsthelightstudio@gmail.com</a>
+</section>
+</main>
+<footer>© 2026 Fears The Light</footer>
+</div>
+<script>
+(function () {
+  var TX = {"en": {"tag": "Small games that are a little scary.", "games": "Games", "soon": "Coming soon to Google Play", "desc": "Hide from kids who never stop playing. Survive 5 nights and escape the school!", "privacy": "Privacy Policy", "terms": "Terms of Use", "contact": "Contact", "contactTxt": "Questions, bugs or privacy requests — write to us:"}, "pt": {"tag": "Jogos pequenos e um pouco assustadores.", "games": "Jogos", "soon": "Em breve no Google Play", "desc": "Fuja das crianças que nunca param de brincar. Sobreviva 5 noites e escape!", "privacy": "Política de Privacidade", "terms": "Termos de Uso", "contact": "Contato", "contactTxt": "Dúvidas, erros ou pedidos de privacidade — escreva para nós:"}, "es": {"tag": "Juegos pequeños y un poco aterradores.", "games": "Juegos", "soon": "Próximamente en Google Play", "desc": "Escóndete de los niños que no paran de jugar. ¡Sobrevive 5 noches y escapa!", "privacy": "Política de Privacidad", "terms": "Términos de Uso", "contact": "Contacto", "contactTxt": "Dudas, errores o solicitudes de privacidad — escríbenos:"}, "fr": {"tag": "De petits jeux un peu effrayants.", "games": "Jeux", "soon": "Bientôt sur Google Play", "desc": "Cache-toi des enfants qui veulent toujours jouer. Survis 5 nuits et fuis !", "privacy": "Politique de confidentialité", "terms": "Conditions d'utilisation", "contact": "Contact", "contactTxt": "Questions, bugs ou demandes de confidentialité — écris-nous :"}, "zh": {"tag": "有点吓人的小游戏。", "games": "游戏", "soon": "即将登陆 Google Play", "desc": "躲开永远玩不够的孩子们。熬过5个夜晚，逃出学校！", "privacy": "隐私政策", "terms": "使用条款", "contact": "联系我们", "contactTxt": "问题、错误反馈或隐私请求，请发邮件给我们："}};
+  var q = (location.search.match(/lang=([a-z]+)/) || [])[1], nl = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  var l = TX[q] ? q : (TX[nl] ? nl : 'en');
+  document.documentElement.lang = l;
+  document.querySelectorAll('[data-i]').forEach(function (e) { var t = TX[l][e.getAttribute('data-i')]; if (t) e.textContent = t; });
+  document.querySelectorAll('[data-q]').forEach(function (a) { a.href = a.getAttribute('href').split('?')[0] + '?lang=' + l; });
+  document.querySelectorAll('nav a').forEach(function (a) { a.classList.toggle('on', a.getAttribute('data-l') === l); });
+})();
+</script>
+</body>
+</html>
